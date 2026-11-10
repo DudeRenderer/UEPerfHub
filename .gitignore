@@ -1,0 +1,32 @@
+# Unreal Engine generated files
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+
+# Local build and validation artifacts
+/Artifacts/
+
+# IDE-generated files
+.vs/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.code-workspace
+
+# Native profiler captures
+*.utrace
+*.ucache
+*.tracy
+*.opt
+
+# OS metadata
+.DS_Store
+Thumbs.db
