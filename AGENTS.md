@@ -22,6 +22,7 @@ UEPerfHub is an Unreal Engine C++ plugin for one-click, unified collection of CP
 ## Implementation
 
 - Use English for code identifiers, comments, documentation, commit messages, logs, and user-facing text. Follow Unreal Engine C++ naming and module conventions.
+- Follow [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) for commit messages: `<type>[optional scope][!]: <description>`. Use lowercase types such as `feat`, `fix`, `docs`, `refactor`, `perf`, `test`, `build`, `ci`, and `chore`. Write a concise English description in the imperative mood. Mark breaking changes with `!` or a `BREAKING CHANGE:` footer. Example: `docs: document commit message conventions`.
 - Inspect the target engine headers and existing plugin code before selecting APIs. Keep engine-version assumptions explicit; do not invent build commands or depend on unverified APIs.
 - Declare module dependencies in the appropriate `Build.cs`. Guard editor-only code and optional profiler integrations so packaged builds do not acquire editor or unavailable SDK dependencies.
 - Respect engine thread ownership and asynchronous GPU readback requirements. Avoid blocking the game or render thread for capture processing or file output.
